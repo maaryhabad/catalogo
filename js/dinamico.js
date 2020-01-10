@@ -26,9 +26,12 @@ var pecas = [ //JSON (JavaScript Object Notation)
         }
     }
 ]
-
 window.onload = function() {
-    this.document.title = "Peça 18";
+    this.criarTela(18)
+}
+
+function criarTela(id) {
+    this.document.title = "Peça nº" + id;
     var numeroDaPeca = pecas[0].peca18;
     var nomeDaPeca = numeroDaPeca.id + ": " + numeroDaPeca.legenda
     console.log(nomeDaPeca)
