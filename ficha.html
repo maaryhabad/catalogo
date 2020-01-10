@@ -60,50 +60,57 @@
           <div id="fullpage">
             <div id='section1' class='section' data-anchor='firstPage'>
               <div class="col-md-12">
-                <img src="images/18/prous2015p61.jpg" class="mx-auto d-block" alt="Não tem imagem aqui">
-                <figcaption class="figure-caption text-center">Legenda + citação da legenda.</figcaption>
-                </div>
-              </div>
-            <!--Segunda parte-->
-            <div id='section2' class="section" data-anchor='secondPage'>
-              <div class="col-md-12" style="margin-right: 100px;">
-                <div class="card-group">
-                    <div class="card" style = "height: 18rem;">
+                  <div class="card-group">
+                    <div class="card text-center" style = "height: 36rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Título aqui</h5>
-                          <p class="card-text">Descrição aqui</p>        
+                            <h5 class="card-title" id="nomeDaPeca"></h5>
+                            <img class="img-fluid" src="images/18/prous2015p61.jpg" id="imagemPrincipal" style = "height: 30rem;" alt="Card image cap">
                         </div>
-                        <div class="card-footer text-muted">
+                    </div>
+                    <div class="card" style = "height: 36rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Descrição</h5>
+                          <p class="card-text overflow-auto" id="descricao">Descrição aqui</p>        
+                        </div>
+                        <div class="card-footer text-muted" id="citacaoDescricao">
                             Citação da Descrição
                         </div>
                     </div>
+                  </div>
+              </div>
+              
+            </div>
+            <!--Segunda parte-->
+            <div id='section2' class="section" data-anchor='secondPage'>
+              <div class="col-md-12" style="margin-right: 100px;">
+                <div class="card-group">  
                     <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Estado/Região</h5>
-                          <p class="card-text">Estado/Região aqui</p>        
+                          <p class="card-text" id="estado">Estado/Região aqui</p>        
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Sítio/Município/Localidade</h5>
-                            <p class="card-text">Sítio/Município/Localidade aqui</p>        
+                            <p class="card-text" id="sitio">Sítio/Município/Localidade aqui</p>        
                           </div>
                     </div>
-                </div>
-                <div class="card-group">
-                    <div class="card" style = "height: 18rem;">
+                    <div class="card" style = "height: 22rem;">
                         <div class="card-body">
                           <h5 class="card-title">Contexto arqueológico</h5>
-                          <p class="card-text">Descrição aqui</p>
+                          <p class="card-text" id="contexto">Descrição aqui</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-muted" id="citacaoContexto">
                             Citação do Contexto
                         </div>
                     </div>
-                    <div class="card" style = "height: 18rem;">
+                </div>
+                <div class="card-group">
+                    <div class="card" style = "height: 22rem;">
                         <div class="card-body">
                           <h5 class="card-title">Matéria-Prima</h5>
-                          <p class="card-text">Descrição aqui</p>
+                          <p class="card-text" id="materiaPrima">Descrição aqui</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-muted" id="citMateria">
                             Citação da Matéria Prima
                         </div>
                     </div>
@@ -113,30 +120,13 @@
             <!--Terceira parte-->
             <div id='section3' class="section" data-anchor='thirdPage'>
                 <div class="card-group">
-                    <div class="card" style = "height: 18rem;">
+                    <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Dimensões</h5>
-                          <p class="card-text">Descrição aqui</p>
+                          <p class="card-text" id="dimensoes">Descrição aqui</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-muted" id="citDimensoes">
                             Citação das Dimensões
-                        </div>
-                    </div>
-                </div>
-                <div class="card-group">
-                    <div class="card" style = "height: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Cavidade</h5>
-                          <p class="card-text">Descrição aqui</p>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Citação da Cavidade
-                        </div>
-                    </div>
-                    <div class="card" style = "height: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Análise Ontográfica</h5>
-                          <p class="card-text">Descrição aqui</p>
                         </div>
                     </div>
                 </div>
@@ -145,16 +135,41 @@
             <!--Quarta parte-->
             <div id='section4' class="section" data-anchor='forthPage'>
                 <div class="card-group">
-                    <div class="card" style = "height: 32rem;">
+                    <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Observações Gerais</h5>
-                          <p class="card-text">Descrição aqui</p>
+                          <p class="card-text" id="observacoes">Descrição aqui</p>
                         </div>
                     </div>
-                    <div class="card" style = "height: 32rem;">
+                </div>
+                <div class="card-group">
+                    <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Paradeiro</h5>
-                          <p class="card-text">Descrição aqui</p>
+                          <p class="card-text" id="paradeiro">Descrição aqui</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Citações de Paradeiro</h5>
+                          <p class="card-text" id="citParadeiro">Descrição aqui</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="card" >
+                        <div class="card-body">
+                          <h5 class="card-title">Cavidade</h5>
+                          <p class="card-text" id="cavidade">Descrição aqui</p>
+                        </div>
+                        <div class="card-footer text-muted" id="citacaoCavidade">
+                            Citação da Cavidade
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Análise Ontográfica</h5>
+                          <p class="card-text" id="analise">Descrição aqui</p>
                         </div>
                     </div>
                 </div>
@@ -162,14 +177,13 @@
 
             <!--Quinta parte-->
             <div id='section5' class="section" data-anchor='fifthPage'>
-                <div class="row text-center text-lg-left galeria">
+                <div class="row text-center text-lg-left galeria" id="estruturaGaleria">
                     <div class="col-lg-2 col-md-4 col-6">
                       <a href="#" class="d-block mb-2 h-100">
-                        <div class="card text-center" style="width: 12rem;">
+                        <div class="card text-center width12">
                             <div class="card-body">
                             <img class="card-img-top img-thumb" src="images/1/t.jpg" alt="Card image cap">
-                              <h5 class="card-title">nº 1 <spam class="card-subtitle mb-2 text-muted">nx</spam></h5>
-                              <p class="card-text reveal">Some quick example text.</p>
+                              <h5 class="card-title">nº 1</h5>
                             </div>
                           </div>
                         </a>
@@ -180,7 +194,7 @@
           </div>
         </div>
       </div>
-      <!-- Optional JavaScript -->
+
       <!--Trianglify background-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
       <script>
@@ -200,6 +214,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <script src="https://alvarotrigo.com/fullPage/jquery.fullPage.min.js"></script>
+      <script src="js/data.js"></script>
+      <script src="js/dinamico.js"></script>
       <script>
         $(document).ready(function() {
           $('#fullpage').fullpage({

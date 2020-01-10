@@ -305,3 +305,7 @@
         background-color: rgba(0, 0, 0, 0.8);
         transition: background-color 1s ease;
     }
+    .width12 {
+        width: 12rem;
+    }
+
