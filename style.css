@@ -282,30 +282,16 @@
     .galeria {
         margin-left: 50px;
         margin-right: 100px;
+        margin-top: 60px;
     }
     .img-thumb {
         margin-bottom: 15px;
         max-height: 80px;
         max-width: 80px;
     }
-    .reveal {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-        padding: 0;
-    }
-
-    .card:hover .reveal{
-        height: auto;
-        visibility: visible;
-        opacity: 10;
-        transition: opacity 1s ease;
-    }
-    .card:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-        transition: background-color 1s ease;
-    }
     .width12 {
         width: 12rem;
     }
-
+    .card-text {
+        font-size: 1vw;
+    }

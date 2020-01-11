@@ -10,10 +10,9 @@
     <title>Nº da peça</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
   </head>
   
-  <body style="background-color: #000000;">
+  <body style="background-color: #000000;" onload="setTimeout(criarTela(), 1000)">
     <!-- Content here -->
     <div class="container-fluid" style="margin-left: -15px;">
       <div class="row">
@@ -33,7 +32,7 @@
                     <a class="nav-link" href="index.html/#secondPage">Sobre</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    <a class="nav-link" href="catalogo.html">Sambaquis</a>
                   </li>
                   <li class="nav-item">
                     <div class="btn-group">
@@ -64,7 +63,7 @@
                     <div class="card text-center" style = "height: 36rem;">
                         <div class="card-body">
                             <h5 class="card-title" id="nomeDaPeca"></h5>
-                            <img class="img-fluid" src="images/18/prous2015p61.jpg" id="imagemPrincipal" style = "height: 30rem;" alt="Card image cap">
+                            <img class="img-fluid" src="" id="imagemPrincipal" style = "height: 30rem;" alt="Card image cap">
                         </div>
                     </div>
                     <div class="card" style = "height: 36rem;">
@@ -137,6 +136,21 @@
                 <div class="card-group">
                     <div class="card">
                         <div class="card-body">
+                          <h5 class="card-title">Conservação, Técnicas Escultóricas e Traços Notórios</h5>
+                          <p class="card-text" id="conservacao">Descrição aqui</p>
+                        </div>
+                        <div class="card-footer text-muted" id="citConservacao">
+                            Citação da Conservação
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Quinta parte-->
+            <div id='section5' class="section" data-anchor='fifthPage'>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
                           <h5 class="card-title">Observações Gerais</h5>
                           <p class="card-text" id="observacoes">Descrição aqui</p>
                         </div>
@@ -175,19 +189,10 @@
                 </div>
             </div>
 
-            <!--Quinta parte-->
-            <div id='section5' class="section" data-anchor='fifthPage'>
+            <!--Sexta parte-->
+            <div id='section6' class="section" data-anchor='sixthPage'>
                 <div class="row text-center text-lg-left galeria" id="estruturaGaleria">
-                    <div class="col-lg-2 col-md-4 col-6">
-                      <a href="#" class="d-block mb-2 h-100">
-                        <div class="card text-center width12">
-                            <div class="card-body">
-                            <img class="card-img-top img-thumb" src="images/1/t.jpg" alt="Card image cap">
-                              <h5 class="card-title">nº 1</h5>
-                            </div>
-                          </div>
-                        </a>
-                    </div>
+                    <!--Aqui ele gera a galeria-->
                 </div>
             </div>
             </div>
